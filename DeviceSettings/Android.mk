@@ -1,7 +1,4 @@
 LOCAL_PATH:= $(call my-dir)
-
-ifneq ($(filter t0lte t0lteatt t0ltetmo,$(TARGET_DEVICE)),)
-
 include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
@@ -16,5 +13,3 @@ LOCAL_CERTIFICATE := platform
 include $(BUILD_PACKAGE)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
-
-endif
