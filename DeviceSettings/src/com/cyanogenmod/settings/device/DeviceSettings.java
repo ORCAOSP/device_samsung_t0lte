@@ -44,7 +44,6 @@ public class DeviceSettings extends FragmentActivity {
     public static final String KEY_LED_FADE = "led_fade";
     public static final String KEY_TOUCHKEY_LIGHT = "touchkey_light";
     public static final String KEY_TOUCHKEY_TIMEOUT = "touchkey_timeout";
-    public static final String KEY_SPEN_POWER_SAVING_MODE = "spen_power_saving";
     public static final String KEY_USE_DOCK_AUDIO = "dock_audio";
 
     ViewPager mViewPager;

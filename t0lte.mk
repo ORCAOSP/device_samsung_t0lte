@@ -34,8 +34,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.smdk4x12.rc:root/ueventd.smdk4x12.rc
 
 # Audio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/t0lte
+PRODUCT_PACKAGES += \
+    tiny_hw
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -71,7 +71,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
-$(call inherit-product, $(LOCAL_PATH)/configs/nfc_enhanced.mk)
+$(call inherit-product-if-exists, vendor/cm/config/nfc_enhanced.mk)
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
