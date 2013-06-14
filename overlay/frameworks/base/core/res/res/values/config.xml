@@ -161,5 +161,8 @@
 
     <!-- Boolean to enable stk functionality on Samsung phones -->
     <bool name="config_samsung_stk">true</bool>
+    
+    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
+    <string name="default_wallpaper_component" translatable="false">@null</string>
 
 </resources>
