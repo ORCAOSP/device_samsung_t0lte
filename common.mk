@@ -66,7 +66,7 @@ PRODUCT_PACKAGES += \
     Stk \
     SamsungServiceMode
 
-$(call inherit-product, vendor/bigfoot/configs/nfc_enhanced.mk)
+$(call inherit-product, vendor/rootbox/configs/nfc_enhanced.mk)
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
